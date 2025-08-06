@@ -3,7 +3,7 @@
 
 This project provides an **end-to-end pipeline** for an image classification task (detecting whether a person is wearing glasses), with **MLflow integration**, **dataset exploration**, **error analysis**, and **FastAPI API for inference**.
 
-It supports **multiple backbones** (`ResNet50`, `MobileNetV3`, `EfficientNet-B4`), **two-phase fine-tuning**, and outputs **confidence scores** for predictions.
+It supports **multiple backbones** (`ResNet50`, `MobileNetV3`, `EfficientNet-B4`), **two-phase fine-tuning**, and outputs **confidence scores** for predictions. Please download the dataset from the [competition](https://www.kaggle.com/competitions/applications-of-deep-learning-wustl-fall-2023/data) page and place it in the `dataset` folder in the root of the repository.
 
 ---
 
@@ -81,7 +81,7 @@ Artifacts are stored in `outputs/` and tracked in MLflow.
 
 ---
 
-## **API Deployment**
+## **API Deployment (Currently not functioning)**
 Run the FastAPI inference server:
 ```bash
 uvicorn api:app --reload
