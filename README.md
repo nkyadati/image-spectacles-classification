@@ -94,10 +94,12 @@ curl -X POST "http://127.0.0.1:8000/predict" -F "file=@sample.jpg"
 ---
 
 ## **Next Steps**
-- **Train for more epochs** to improve accuracy.  
+- **Train for more epochs** to improve accuracy.
+- **Progressive unfreezing of layers** to improve training speed.
+- **Include more backbones (e.g., ViT)** for a more thorough comparison.
 - **Benchmark performance vs inference time** across backbones.  
 - **Introduce advanced augmentation strategies** (RandAugment, Mixup, CutMix).  
 - **Add a working Docker container** for production-ready deployment.  
 - **Mixed precision training & gradient clipping** for faster, more stable training.  
-- **Export models to ONNX & TFLite** for mobile/edge inference.  
+- **Export models to ONNX, CoreML & TFLite** for mobile/edge inference.  
 - **Develop a sample Android app** for on-device inference.  
